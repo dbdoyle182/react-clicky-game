@@ -4,7 +4,12 @@ import Jumbotron from './components/Jumbotron'
 import Footer from './components/Footer';
 import GameBody from './components/GameBody'
 import teams from './teams.json'
-
+const styles = {
+  body: {
+    background: "url(https://wallpapertag.com/wallpaper/full/5/0/e/357188-cool-basketball-court-background-2718x1808-pc.jpg)",
+    backgroundSize: "cover"
+  }
+}
 class App extends Component {
   state = {
     initial: teams
@@ -12,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.body}>
         <Navbar />
         <Jumbotron />
         <div className='container'>

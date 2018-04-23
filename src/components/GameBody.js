@@ -12,7 +12,8 @@ const styles = {
         background: 'lavender',
         float: 'left',
         margin: '28px',
-        border: '1px solid black'
+        border: '1px solid black',
+        boxShadow: '5px 10px 15px gray'
     }
 }
 const GameBody = props => (
