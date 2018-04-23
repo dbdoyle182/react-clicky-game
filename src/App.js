@@ -17,7 +17,11 @@ class App extends Component {
         <Jumbotron />
         <div className='container'>
           {(this.state.initial).map(team => {
-            return <GameBody image={team.image} teamname={team.teamname} />
+            return <GameBody
+            id={team.id}
+            key={team.id} 
+            image={team.image} 
+            teamname={team.teamname} />
           })}
         </div>
         <Footer />
