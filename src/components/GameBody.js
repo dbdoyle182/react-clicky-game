@@ -18,7 +18,7 @@ const styles = {
 }
 const GameBody = props => (
     <div>
-        <div style={styles.cage}>
+        <div style={styles.cage} onClick={() => props.gamelogic(props.id)}>
             <img style={styles.image} src={props.image} alt={props.teamname} />
         </div>
     </div>
